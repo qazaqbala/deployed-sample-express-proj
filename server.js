@@ -197,7 +197,7 @@ app.get("/welcome",(req,res)=>{
     res.render("welcome", {title:"TFlex - Welcome Page"});
 })
 //creating the server
-const PORT = 5001;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, ()=>{
     console.log(`Web server is up on port ${PORT}`);
 })
