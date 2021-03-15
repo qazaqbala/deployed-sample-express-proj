@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!--fontawesome cdn bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!--fav icon-->
+    <link rel="shortcut icon" href="/images/tab-logo.png">
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/listing.css">
+    <link rel="stylesheet" href="/css/details.css">
+    <link rel="stylesheet" href="/css/registration.css">
+    <link rel="stylesheet" href="/css/login.css">
+    <script defer src="/js/app.js"></script>
+    <!-- JQuery & slider funcs-->
+    <link rel="stylesheet" href="css/lightslider.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="/js/lightslider.js"></script>    
+</head>
+
+<body>
+    <!-- Nav -->
+    <header>
+        <nav>
+            <!--burger menu-->
+            <input type="checkbox" class="menu-btn" id="menu-btn">
+            <label class="menu-icon" for="menu-btn">
+                <span class="nav-icon"></span>
+            </label>
+
+            <!--logo-->
+            <a href="/" class="logo">
+                <img src="/images/new-logo.png" alt="">
+            </a>
+        
+            <!--Menu-->
+            <ul class="menu">
+                <li><a href="/listing">Movies</a></li>
+                <li><a href="">TV</a></li>
+                <li><a href="#">Free</a></li>
+                <li><a href="/login">Sign In</a></li>
+                <li><a href="/registration">Create an Account</a></li>
+            </ul>
+            <!--search-->
+            <div class="search">
+                <input type="text" placeholder="Find Movie">
+                <!--search icon-->
+                <img src="/images/search.svg" alt="">
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+       {{{body}}}
+    </main>
+
+    <!--Footer-->
+    <footer>
+         <!---->
+            <div class="sec contact">
+                <ul class="info">
+                    <li>
+                        <a href=""><img src="/images/google-play.svg" class="footer-contact-img" alt=""></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="/images/itunes.png" class="footer-contact-img" alt=""></a>
+                    </li>
+                     <li>
+                          <a href=""><img src="/images/windows.png" class="footer-contact-img" alt=""></a>
+                     </li>   
+                </ul>
+            </div>
+
+        <div class="container-footer">
+            
+            <div class="sec aboutus">
+                
+                <h2>Watch</h2>
+
+                <ul class="watch">
+                    <li><a href="#">Spotlight</a></li>
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">TV</a></li>
+                    <li><a href="#">Free</a></li>
+                </ul>
+
+                <ul class="sci">
+                    <li><a href="#">
+                        <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                    </a></li>
+                    <li><a href="#">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a></li>
+                    <li><a href="#">
+                        <i class="fa fa-youtube" aria-hidden="true"></i>
+                    </a></li>
+                    <li><a href="#">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a></li>
+                </ul>
+            </div>
+            <div class="sec myaccountLinks">
+                <h2>My Account</h2>
+                <ul>
+                    <li><a href="#">My TFlex</a></li>
+                    <li><a href="#">Account</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">Manage Devices</a></li>
+                </ul>
+            </div>
+            <!---->
+            <div class="sec featureLinks">
+                <h2>Features</h2>
+                <ul>
+                    <li><a href="#">Lists</a></li>
+                    <li><a href="#">Family</a></li>
+                    <li><a href="#">Disc to Digital</a></li>
+                    <li><a href="#">InstaWatch</a></li>
+                    <li><a href="#">Movies Anywhere</a></li>
+                </ul>
+            </div>
+           
+           <!---->
+           <div class="sec helpLinks">
+                <h2>Help</h2>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Devices</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Forums</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            
+        </div>
+    </footer>
+    <div class="copyright">
+        <p>Copyright © 2021 Temirlan Tolen. All Rights Reserved.</p>
+    </div>
+
+    <!--Script For Slider-->
+    <script>
+        $(document).ready(function() {
+            $('#autoWidth, #autoWidth2, #autoWidth3').lightSlider({
+                autoWidth:true,
+                loop:true,
+                onSliderLoad: function() {
+                    $('#autoWidth, #autoWidth2').removeClass('cS-hidden');
+                } 
+            });  
+        });
+    </script>
+</body>
+</html>

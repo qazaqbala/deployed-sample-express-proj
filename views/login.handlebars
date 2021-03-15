@@ -1,0 +1,28 @@
+<!--Main Container-->
+<section id="login-container">
+    <div class="container">
+        <div class="title">Sign In to Tflex</div>
+        <form action="/login" method="POST">
+            <div class="user-details">
+                
+                <div class="input-box wide">
+                    <input type="email" name="email" placeholder="Email" value="{{msg.eMsg}}"/>
+                    <div class="errors">{{errorEmail}}</div>
+                </div>
+                
+
+                <div class="input-box wide">
+                    <input type="password" name="password" placeholder="Password" value="{{msg.pMsg}}"/>
+                    <div class="errors">{{errorPassword}}</div>
+                </div>
+
+            </div>
+            <div class="button">
+                <input type="submit" value="Sign Up">
+            </div>
+            <div class="create-new">
+                <a href="/registration"><button type="button" placeholder="Create a new Tflex account">Create a new Tflex account</button></a>
+            </div>
+        </form>
+    </div>
+</section>

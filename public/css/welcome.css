@@ -1,0 +1,31 @@
+* {
+	box-sizing: border-box;
+}
+
+#welcome-container{
+    width: 100vw;
+    height: 100vh;
+    
+    background-color: #4da8da;
+}
+#welcome-container h1{
+    font-size: 55%;
+    color: seashell;
+}
+form .create-new {
+	height: 52px;
+    margin: 25px auto 20px auto;
+}
+form .create-new button{
+	height: 100%;
+    width: 90%;
+    margin: auto auto auto 5%;
+    outline: none;
+    color: rgb(50, 106, 228);
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+	border-color: rgb(50, 106, 228);
+	background: linear-gradient(-135deg, #d8f0ff,#f7f7f7);
+}

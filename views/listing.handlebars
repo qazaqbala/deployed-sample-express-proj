@@ -1,0 +1,27 @@
+<div id="listing-container">
+    <section id="listing" style="">
+        <div class="listing-heading">
+            <a href="" class="listing-btn active">Most Watched</a>
+            <a href="" class="listing-btn">Release Date</a>
+            <a href="" class="listing-btn">Recently Added</a>  
+        </div>
+
+        
+        <div id="listing-movies">
+        {{#each films2}}
+            <!--box-->
+            <div class="listing-box">
+                <!--img-->
+                <div class="listing-img">
+                <a href="/listing/{{this.id}}">
+                    <img src="{{this.image}}" alt="">
+                </a> 
+                </div>
+                <!--text-->
+                <a href="#" class="title">{{this.name}}</a>
+            </div>
+        {{/each}}
+        </div>
+        
+    </section>
+</div>
